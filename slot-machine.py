@@ -6,13 +6,16 @@ def deposit():
         if amount.isdigit():
             amount = int(amount)
             
-            if amount > 0:
+            if amount > 10:
                 break
 
             else:
-                print("Amount must be greater than 0.")
+                print("Amount must be greater than 10.")
 
         else: 
             print("Please enter a number.")
     
     return amount
+
+def main():
+    balance = deposit()
